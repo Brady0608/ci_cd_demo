@@ -9,4 +9,4 @@ jobs:
       - name: Install ajv-cli
         run: npm install -g ajv-cli
       - name: Validate JSON
-        run: ajv validate -s schema.json -d data.json
+        run: ajv validate -s schema.json -d "*data.json"
